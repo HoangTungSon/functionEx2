@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>min Function from 3 numbers</title>
+</head>
+<body>
+<script>
+    function min(a,b,c) {
+        let min = a;
+        if (min > b) {
+            min = b;
+            if (min > c) {
+                min = c;
+                alert(c + " is lowest number")
+            } else {
+                alert(b + " is lowest number")
+            }
+        } else {
+            if (min > c) {
+                min = c;
+                alert(c + " is lowest number")
+            } else {
+                alert(a + " is lowest number")
+            }
+        }
+    }
+
+    let a = Number(prompt("enter the number"));
+    let b = Number(prompt("enter the number"));
+    let c = Number(prompt("enter the number"));
+
+    min(a,b,c)
+</script>
+</body>
+</html>

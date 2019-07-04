@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dien tich chu vi cua hinh tron</title>
+</head>
+<body>
+<script>
+
+    let radius = parseInt(prompt("Enter the Radius"));
+
+    function dienTich() {
+        let areaCircle = radius*radius*(Math.PI);
+
+        document.write("Area of this circle is = " + areaCircle);
+    }
+
+    function chuVi() {
+        let perCircle = 2*radius*(Math.PI);
+
+        document.write("Perimeter of this circle is = " + perCircle);
+    }
+
+    dienTich();
+    chuVi();
+</script>
+</body>
+</html>

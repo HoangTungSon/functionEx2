@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Swap variable</title>
+</head>
+<body>
+<script>
+
+    numA = prompt("enter the a number");
+    numB = prompt("enter the b number");
+
+    function swap(a,b) {
+        let temp = a;
+        a = b;
+        b = temp;
+        document.write(a + " = la gia tri cua a" + "<br>");
+        document.write(b + " = la gia tri cua b")
+    }
+
+    swap(numA,numB);
+
+
+</script>
+</body>
+</html>

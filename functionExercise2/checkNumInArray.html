@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>check anything in Array</title>
+</head>
+<body>
+<script>
+
+    let num = Number(prompt("Total number you want to enter"));
+    let arr = [];
+    for (i = 1; i <= num; i++) {
+        let pushNum = Number(prompt("Enter the number"));
+        arr.push(pushNum);
+    }
+    console.log(arr);
+
+
+    let numInputX = prompt("Number you want to enter");
+    check(numInputX);
+
+    function check(numInput) {
+        let count = 0;
+        for (j = 0; j < arr.length; j++) {
+            if (numInput == arr[j]) {
+                count += 1;
+            }
+        }
+        if (count > 0) {
+            document.write("Total time it appear = " + count);
+        } else {
+            document.write("Not appear any where");
+        }
+    }
+</script>
+</body>
+</html>

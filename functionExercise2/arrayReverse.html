@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>array Reverse</title>
+</head>
+<body>
+<script>
+    function reverseArray() {
+        let num = Number(prompt("Total number you want to enter"));
+        let arr = [];
+        for (i=1; i<=num; i++){
+            let pushNum = Number(prompt("Enter the number"));
+            arr.push(pushNum);
+        }
+        console.log(arr.reverse());
+    }
+
+    reverseArray();
+</script>
+</body>
+</html>

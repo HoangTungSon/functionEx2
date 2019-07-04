@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ptBac2</title>
+</head>
+<body>
+
+<script>
+
+    let a = Number(prompt("Gia Tri a cua pt ax^2 + bx + c = 0"));
+    let b = Number(prompt("Gia Tri b cua pt ax^2 + bx + c = 0"));
+    let c = Number(prompt("Gia Tri b cua pt ax^2 + bx + c = 0"));
+
+    function ptBac2(a,b,c) {
+        if(a==0){
+            if(b==0){
+                if(c==0){
+                    alert("pt vo so nghiem")
+                } else {
+                    alert("pt vo nghiem")
+                }
+            } else {
+                x = -c/b;
+                alert("nghiem x cua phuong trinh = " + x)
+            }
+        }else {
+            x1 = (Math.sqrt(b*b-4*a*c) - b)/(2*a);
+            x2 = (-1*Math.sqrt(b*b-4*a*c) - b)/(2*a);
+            alert("nghiem x1 cua phuong trinh = " + x1);
+            alert("nghiem x2 cua phuong trinh = " + x2)
+        }
+    }
+
+    ptBac2(a,b,c);
+</script>
+</body>
+</html>
